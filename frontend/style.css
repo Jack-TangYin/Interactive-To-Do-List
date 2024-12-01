@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6f9fc, #e3eaf6);
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Input Section */
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input .form-control {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .todo-input .form-control:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .todo-input .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .todo-input .btn:hover {
+    background-color: #4c0fa0;
+    transform: scale(1.05);
+  }
+  
+  /* Filter Buttons */
+  .todo-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .filter-btn.active {
+    background-color: #6a11cb;
+    color: white;
+  }
+  
+  .filter-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: #f1f3f5;
+  }
+  
+  .task-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+  }
+  
+  /* Delete Button */
+  .task-item .delete-btn {
+    background-color: rgb(121, 120, 120) ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-item .delete-btn:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+  }
+  
+  /* Complete/Undo Button */
+  .task-item .toggle-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-item .toggle-btn:hover {
+    background-color: #45a045;
+    transform: scale(1.05);
+  }
+
+  /* Edit Button */
+  .task-item .edit-btn {
+    background-color: #4589ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-item .edit-btn:hover {
+    background-color: #4589ff;
+    transform: scale(1.05);
+  }
+  
+  .btn-clear {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-clear:hover {
+    background-color: crimson;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+      

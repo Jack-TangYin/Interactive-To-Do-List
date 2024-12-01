@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive To-Do List</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive To-Do List</h1>
+  </header>
+
+  <main class="container">
+    <section class="todo-input">
+      <input
+        type="text"
+        id="task-input"
+        class="form-control"
+        placeholder="Enter a new task..."
+      />
+      <button id="add-task-btn" class="btn">Add Task</button>
+    </section>
+
+    <section class="todo-filters">
+      <button class="btn filter-btn active" data-filter="all">All</button>
+      <button class="btn filter-btn" data-filter="completed">Completed</button>
+      <button class="btn filter-btn" data-filter="incomplete">Incomplete</button>
+    </section>
+
+    <ul id="task-list" class="task-list">
+      <!-- Tasks will be dynamically added here -->
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Interactive To-Do List</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
